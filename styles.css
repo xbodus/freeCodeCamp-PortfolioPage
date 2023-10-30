@@ -4,13 +4,23 @@
 
 * {
     box-sizing: content-box;
-    /*border: 1px solid black;*/
+    /*border: 1px solid white;*/
+}
+
+html {
+    overflow-x: hidden;
+    margin: 0;
+    width: 100vw;
 }
 
 body {
     margin: 0;
     overflow-x: hidden;
-    background-color: #9b7ec9;
+    background-color: black;
+}
+
+main {
+    margin: 0;
 }
 
 #navbar {
@@ -55,6 +65,7 @@ body {
     width: 100vw;
     background-color: #6942A7;
     margin: 0;
+    overflow: hidden;
     z-index: -1;
 }
 
@@ -68,8 +79,8 @@ body {
 
 #welcome-section > h1 {
     margin: 0;
-    width: 300px;
-    font-size: 60px;
+    width: 400px;
+    font-size: 80px;
     font-family: 'roboto', sans-serif;
     color: var(--text-colorOne);
     position: absolute;
@@ -87,14 +98,85 @@ body {
     left: 15%;
 }
 
-#welcome-section > img {
+.welcome-logo-container {
+    height: 100vh;
+    width: 60vw;
+    margin: 0;
     position: absolute;
-    top: 5%;
     right: 0%;
+    overflow: hidden;
+}
+
+.welcome-logo-container > img {
     margin: 0;
     height: 100vh;
-    transform: scale(1.4);
+    transform: scale(1.7);
+    position: absolute;
+    top: 10%;
+    left: 20%;
     filter: invert(100%) sepia(51%) saturate(0%) hue-rotate(55deg) brightness(105%) contrast(101%);
-    opacity: 50%;
-    z-index: 0;
+    opacity: 100%;
+}
+
+#projects-section {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+#projects-page-stop {
+    width: 100vw;
+    height: 10px;
+}
+
+.bio-container {
+    height: 650px;
+    width: 650px;
+    background-color: #6942A7;
+    border-radius: 50%;
+    left: -12%;
+    position: absolute;
+    top: 111%;
+}
+
+#projects-section > h2 {
+    height: 80px;
+    color: var(--text-colorOne);
+    font-family: 'roboto', sans-serif;
+    text-transform: uppercase;
+    font-size: 80px;
+    text-align: right;
+    margin-right: 150px;
+    margin-top: 150px;
+}
+
+.projects-layout{
+    width: 970px;
+    position: relative;
+    top: 3%;
+    left: 35%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.project-tile {
+    font-family: 'roboto', sans-serif;
+    color: var(--text-colorOne);
+    margin: 0;
+}
+
+.project-tile > h3 {
+    margin: 15px 0 0 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.project-container {
+    margin: 0 auto;
+    height: 300px;
+    width: 300px;
+    background-color: #6942A7;
+    border-radius: 50%;
 }
